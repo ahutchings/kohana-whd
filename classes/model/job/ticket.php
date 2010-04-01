@@ -8,6 +8,7 @@ class Model_Job_Ticket extends ORM
 
     protected $_belongs_to = array(
         'assigned_tech' => array('model' => 'tech'),
+        'client' => array(),
         'status_type' => array(),
         'priority_type' => array(),
         'location' => array()
