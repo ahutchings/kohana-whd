@@ -11,6 +11,7 @@ class Model_Job_Ticket extends ORM
         'client' => array(),
         'status_type' => array(),
         'priority_type' => array(),
-        'location' => array()
+        'location' => array(),
+        'tech_group_level' => array(),
     );
 }
