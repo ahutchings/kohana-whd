@@ -14,4 +14,8 @@ class Model_Job_Ticket extends ORM
         'location' => array(),
         'tech_group_level' => array(),
     );
+
+    protected $_has_many = array(
+        'tech_notes' => array(),
+    );
 }
