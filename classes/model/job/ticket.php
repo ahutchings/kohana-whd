@@ -16,6 +16,7 @@ class Model_Job_Ticket extends ORM
     );
 
     protected $_has_many = array(
+        'client_notes' => array(),
         'tech_notes' => array(),
     );
 }
