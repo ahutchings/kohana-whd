@@ -1,6 +1,6 @@
 <?php
 
-class Model_Location extends ORM
+class Kohana_Model_Location extends ORM
 {
     protected $_primary_key = 'location_id';
     protected $_primary_val = 'location_name';

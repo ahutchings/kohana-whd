@@ -1,6 +1,6 @@
 <?php
 
-class Model_Problem_Type extends ORM
+class Kohana_Model_Problem_Type extends ORM
 {
     protected $_primary_key = 'problem_type_id';
     protected $_primary_val = 'problem_type_name';

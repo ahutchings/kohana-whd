@@ -1,6 +1,6 @@
 <?php
 
-class Model_Tech extends ORM
+class Kohana_Model_Tech extends ORM
 {
     protected $_primary_key = 'client_id';
     protected $_table_names_plural = FALSE;

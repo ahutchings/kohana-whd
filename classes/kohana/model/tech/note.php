@@ -1,6 +1,6 @@
 <?php
 
-class Model_Tech_Note extends ORM
+class Kohana_Model_Tech_Note extends ORM
 {
     protected $_primary_key = 'tech_note_id';
     protected $_table_names_plural = FALSE;

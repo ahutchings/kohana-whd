@@ -1,6 +1,6 @@
 <?php
 
-class Model_Job_Ticket extends ORM
+class Kohana_Model_Job_Ticket extends ORM
 {
     protected $_primary_key = 'job_ticket_id';
     protected $_primary_val = 'subject';

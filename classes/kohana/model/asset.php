@@ -1,6 +1,6 @@
 <?php
 
-class Model_Asset extends ORM
+class Kohana_Model_Asset extends ORM
 {
     protected $_primary_key = 'asset_id';
     protected $_table_names_plural = FALSE;
