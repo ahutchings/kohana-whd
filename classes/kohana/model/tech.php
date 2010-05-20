@@ -7,7 +7,8 @@ class Kohana_Model_Tech extends ORM
 
     protected $_has_many = array(
         'job_tickets' => array('foreign_key' => 'assigned_tech_id'),
-        'tech_group_levels' => array('through' => 'tech_group_level_tech')
+        'tech_group_levels' => array('through' => 'tech_group_level_tech'),
+        'managed_tech_groups' => array('model' => 'tech_group', 'foreign_key' => 'manager_id'),
     );
 
     public function __get($column)
