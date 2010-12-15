@@ -2,18 +2,22 @@
 
 class Kohana_Model_Client extends ORM
 {
-    protected $_primary_key = 'client_id';
+    protected $_primary_key        = 'client_id';
     protected $_table_names_plural = FALSE;
 
     public function __get($column)
     {
         // tech relation hack
-        if ($column == 'tech')  {
+        if ($column == 'tech') 
+		{
             $this->_load();
 
-            if (isset($this->_related[$column])) {
+            if (isset($this->_related[$column]))
+			{
                 $model = $this->_related[$column];
-            } else {
+            }
+			else
+			{
                 $model = ORM::factory($column);
             }
 
